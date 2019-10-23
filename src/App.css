@@ -1,14 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +23,40 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+#upload {
+  margin: 20px;
+}
+
+form {
+  margin: 20px;
+}
+
+form input {
+  margin-left: 10px;
+}
+
+#board {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.square {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.goodguy {
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+}
+
+.badguy {
+  background-color: red;
+  background-position: center;
+  background-size: cover;
 }
